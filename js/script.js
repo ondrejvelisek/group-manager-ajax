@@ -104,7 +104,7 @@ function fillMemberUsers(memberUsers, members) {
         calls.push(perunGet("usersManager", "getUserById", {"id": members[i].userId}, success(members[i])));
         function success(member) {
             return function (user) {
-                var dispayName = user.firstName+" "+user.middleName+" "+user.lastName;
+                var dispayName = user.firstName+" "+user.lastName;
                 memberUsers.push({name:dispayName, status:member.status,
                     membershipType:member.membershipType, member:member, user:user});
             }
