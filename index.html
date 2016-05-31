@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="${pageContext.request.locale}" xmlns:c="http://www.w3.org/1999/XSL/Transform">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <title>Group Manager</title>
+</head>
+<body>
+
+    <nav class="header navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="logo"/> Group manager
+                </a>
+                <p class="navbar-text">(client side)</p>
+            </div>
+            <p class="navbar-text navbar-right">
+                <span data-var="principal.user.titleBefore"></span>
+                <span data-var="principal.user.firstName"></span>
+                <span data-var="principal.user.middleName"></span>
+                <span data-var="principal.user.lastName"></span>
+                <span data-var="principal.user.titleAfter"></span>
+            </p>
+        </div>
+    </nav>
+
+
+    <div class="content container">
+        <div class="row">
+            <div class="col-sm-12">
+
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="groups">
+
+
+                        <div class="row">
+                            <div class="col-md-6">
+
+
+                                <div id="table-groups"></div>
+
+
+                            </div>
+                            <div class="col-md-6">
+
+
+                                <div id="table-groupMembers"></div>
+
+                                <div id="table-voMembers"></div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="exception">
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="footer navbar navbar-default">
+        <div class="container">
+            <p class="navbar-text">Ondřej Velíšek</p>
+        </div>
+    </nav>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jso.js"></script>
+
+    <script src="js/table.js"></script>
+    <script src="js/breadcrumbs.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/button.js"></script>
+
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
